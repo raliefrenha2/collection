@@ -30,6 +30,18 @@ body {
 	transition: transform 500ms ease-out;
 }
 
+.content {
+	transition:transform 500ms ease-out;
+}
+
+.box-2:hover .content {
+	-ms-transform: rotate(3deg); /* IE 9 */
+    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+    transform: rotate(3deg);
+
+    transition:transform 500ms ease-in;
+}
+
 .overlay {
 	position: absolute;
 	left: 0;
@@ -74,4 +86,8 @@ body {
 	display: block;
 	margin: 5px;
 	color: white;
+}
+
+.icon-1:hover, .icon-2:hover {
+	color: black;
 }
