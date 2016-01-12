@@ -45,3 +45,32 @@ body {
 	opacity: 1;
 	transition: opacity 500ms ease-in-out;
 }
+
+
+.left-overlay {
+	position: absolute;
+	left: -25%;
+	top: 0;
+	height: 100%;
+	background-color: rgba(255,255,0,0.7);
+	transition: opacity, left 500ms ease-in-out;
+	width: 25%;
+}
+
+.box-2:hover .left-overlay {
+	left: 0 !important;
+	transition: left 500ms ease-in-out;
+	
+}
+
+.icons {
+	position: absolute;
+	display: block;
+	top: 30%;
+	left: 30%
+}
+
+.icon-1, .icon-2 {
+	display: block;
+	margin: 5px;
+}
