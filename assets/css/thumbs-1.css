@@ -16,6 +16,7 @@ body {
 .box-2:hover {
 	background-color: rgba(0,0,0, 0.2);
 	transition: background-color 500ms ease-in;
+
 }
 
 
@@ -30,16 +31,16 @@ body {
 	transition: transform 500ms ease-out;
 }
 
-.content {
+.rotate {
 	transition:transform 500ms ease-out;
 }
 
-.box-2:hover .content {
-	-ms-transform: rotate(3deg); /* IE 9 */
-    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
-    transform: rotate(3deg);
+.box-2:hover .rotate {
+	-ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+    transform: rotate(1deg);
 
-    transition:transform 500ms ease-in;
+    transition:transform 500ms ease-out;
 }
 
 .overlay {
