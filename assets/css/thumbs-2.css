@@ -1,0 +1,33 @@
+.box {
+    max-width: 500px;
+    margin: auto;
+}
+
+.detail {
+    position: relative;
+    max-height: 60px;
+}
+
+.desc {
+    padding-left: 0 10px;
+}
+
+.title {
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.category {
+    color: #d1d1d1;
+    padding: 5px;
+}
+
+.liked {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 18px 20px;
+   
+}
