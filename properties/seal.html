@@ -12,9 +12,11 @@
 			.box {
 				position: relative;
 				height: 100px;
-				width: 150px;
+				width: 180px;
 				background-color: #fff;
 				margin: 5px auto 5px auto;
+				overflow: hidden;
+
 
 			}
 
@@ -27,6 +29,8 @@
 				left: 0;
 				border-top: 20px solid aqua;
 				border-right:  20px solid transparent;
+				transition: all 500ms ease-out 0ms;
+				transform: scale(1);
 			}
 
 			.seal-2 {
@@ -52,21 +56,61 @@
 
 			.seal-5 {
 				top: 0;
-				right: 0;
+				left: 0;
 				border: 20px solid red;
+				transition: all 500ms ease-out 0ms;
 				
 			}
-
-
 			
 		   .seal-5::before {
 			    position: absolute;
 			    content: '';
 			    top: 6px;
-			    right: -14px;
+			    left: -14px;
 			    border: 14px solid white;
 			    transform: rotate(45deg);
+			    
 			}
+			
+			.box:hover .seal-5 {
+				top: -60px;
+				
+			}
+
+			.seal-6 {
+				padding: 5px 10px 5px 20px;
+				background-color: red;
+				color: white;
+				left: -57px;
+				transition: all 500ms ease-out 0ms;
+			}
+
+			.seal-6::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 57px;
+				border-top: 30px solid red;
+				border-right: 15px solid transparent;  
+			}
+
+			.box:hover .seal-6 {
+				left: -5px;
+			}
+
+			.box:hover .seal-6::before {
+				left: 38px;
+				border-top: 15px solid red;
+				border-right: 15px solid red;
+				border-bottom: 15px solid transparent;
+				border-left: 15px solid transparent;
+				transform: rotate(45deg);
+				border-radius: 50%;
+			}
+
+
+
+
 			
 
 		</style>
@@ -113,6 +157,13 @@
 				<div class="col-sm-3">
 					<div class="box">
 						<div class="seal seal-5"></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="box">
+						<div class="seal seal-6">
+							new
+						</div>
 					</div>
 				</div>
 			</div>
