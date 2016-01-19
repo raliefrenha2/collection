@@ -1,0 +1,34 @@
+body {
+	font-family: "Open Sans";
+	background-color: #F1F1F1;
+}
+.navbar {
+	border-radius: 0;
+	border: 0;
+}	
+
+a {
+	position: relative;
+	-webkit-transition: color 300ms ease-out;
+	transition: color 500ms ease-out;
+}
+
+a::before, a::after {
+	content: '';
+	position: absolute;
+	transition: transform .5s ease;
+}
+
+
+.effect::before {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #FF0000;
+	transform: scaleX(0);
+}
+
+.effect:hover::before {
+	transform: scaleX(1);
+}
