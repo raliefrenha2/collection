@@ -1,0 +1,53 @@
+
+.icon-1 { 
+    background: #1B1B25 none repeat scroll 0 0;
+}
+
+.icon-2 { 
+    background: #13161D none repeat scroll 0 0;
+}
+
+.icon-3 { 
+    background: #171515 none repeat scroll 0 0;
+}
+
+.box > div > a > .lnr { 
+    bottom: 0;
+    display: block;
+    font-size: 40px;
+    height: 50px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    transition: all 0.5s ease-out 0s;
+}
+
+.box > div > a:hover { 
+    color: #FF0000;
+}
+
+.box > div > a:hover .lnr {
+	transform: scale(1.2);
+}
+
+.box a .sups {
+    font-size: 13px;
+    position: absolute;
+    right: 25px;
+    top: 35px;
+}
+
+.box > div > a { 
+    color: #fff;
+    display: block;
+    height: 120px;
+    opacity: 1;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease-out 0s;
+    visibility: visible;
+    width: 120px;
+}
