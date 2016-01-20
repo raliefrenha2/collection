@@ -9,15 +9,43 @@
 			<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 			<link rel="stylesheet" href="../assets/css/main.css">
 		<style>
+            
+             .wrapper {
+             	position: relative;
+			    margin: auto;
+				width: 188px;
+				height: 104px;
+				overflow: hidden;
+			}
+
+			.wrapper::before, .wrapper::after {
+				position: absolute;
+				content: '';
+				border-bottom: 5px solid rgba(189, 109, 109, 0.8);
+				border-left: 5px solid transparent;
+			}
+
+			.wrapper::before {
+				top: 0px;
+				left: 52px;
+			}
+
+			.wrapper::after {
+				top: 52px;
+   				left: 0px;
+			}
+            
+            .wrapper >.box {
+                overflow: visible;
+            }
+            
 			.box {
 				position: relative;
-				height: 100px;
-				width: 180px;
-				background-color: #fff;
-				margin: 5px auto 5px auto;
-				overflow: hidden;
-
-
+			    height: 100px;
+			    width: 180px;
+			    background-color: #fff;
+			    margin: 5px auto 5px auto;
+			    overflow: hidden;
 			}
 
 			.seal {
@@ -131,10 +159,22 @@
 				top: 0;
 			}
 
+			.seal-8 {
+			           top: 2px;
+    left: -24px;
+    width: 80px;
+    height: 25px;
+    background-color: red;
+    transform: rotate(-45deg);
+    transition: all 500ms ease-out 0ms;
+			}
 
-
-
-			
+			.new {
+		position: absolute;
+    top: 12px;
+    left: 28px;
+    color: #fff;
+			}
 
 		</style>
 		<!--[if lt IE 9]>
@@ -206,6 +246,15 @@
 				<div class="col-sm-3">
 					<div class="box">
 						<div class="seal seal-7"><sup class="disc">-50%</sup></div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+				<div class="wrapper">
+					<div class="box">
+						
+						    <div class="seal seal-8"><sup class="new">New</sup></div>
+						</div>
 					</div>
 				</div>
 			</div>
