@@ -1,0 +1,99 @@
+.sos-med {
+	display: block;
+	position: absolute;
+    background: rgba(100,100,100,0.5);
+    opacity: 0;
+    transition : all 500ms ease-out 0ms;
+}
+
+.sos-med-1 {
+    width: 65%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.sos-med-2 {
+    height: 0;
+    width: 50px;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.box:hover .sos-med {
+	opacity: 1;
+}
+
+.box:hover .sos-med-2 {
+    height: 80%;
+    
+}
+
+.icons {
+	color: #fff;
+    font-size: 20px;
+}
+
+.icon {
+	position: absolute;
+	height: 40px;
+    width: 40px;
+    transition : all 500ms ease-out 0ms;
+}
+
+.icon-1 {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.icon-2 {
+    bottom: -40px;
+    left: 5px;
+}
+
+.fb {
+    background: #405bae;
+    padding: 7px 14px;
+}
+
+.tw {
+    background: #22abf4;
+    padding: 7px 11px; 
+}
+
+.box:hover .fb {
+	left: -45px;
+}
+.box:hover .tw {
+	right: -45px;
+}
+
+.icons:hover .icon {
+    background: #fff;
+}
+
+.icons:hover .fb {
+    color: #405bae;
+}
+
+.icons:hover .tw {
+    color: #22abf4;
+
+}
+
+.box:hover .sos-med-2 .fb {
+    left: 5px;
+    bottom: 50px;
+}
+
+.box:hover .sos-med-2 .tw {
+    left: 5px;
+    bottom: 5px;
+}
