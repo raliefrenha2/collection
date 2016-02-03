@@ -24,11 +24,20 @@
     opacity: 1;
 }
 
+.sos-med-3 {
+    height: 0;
+    width: 50px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+}
+
 .box:hover .sos-med {
 	opacity: 1;
 }
 
-.box:hover .sos-med-2 {
+.box:hover .sos-med-2, .box:hover .sos-med-3 {
     height: 80%;
     
 }
@@ -58,6 +67,10 @@
     left: 5px;
 }
 
+.icon-3 {
+    bottom: 0;
+    left: 5px;
+}
 .fb {
     background: #405bae;
     padding: 7px 14px;
@@ -88,12 +101,12 @@
 
 }
 
-.box:hover .sos-med-2 .fb {
+.box:hover .sos-med-2 .fb, .box:hover .sos-med-3 .fb {
     left: 5px;
     bottom: 50px;
 }
 
-.box:hover .sos-med-2 .tw {
+.box:hover .sos-med-2 .tw, .box:hover .sos-med-3 .tw {
     left: 5px;
     bottom: 5px;
 }

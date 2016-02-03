@@ -16,13 +16,13 @@
 	transition : all 500ms ease-out 0ms;
 }
 
-.img-responsive {
+.scale {
 	transition : all 500ms ease-out 0ms;
 	
 }
 
 
-.box:hover .img-responsive {
+.box:hover .scale {
 	transform :scale(1.2,1.2);
 }
 
@@ -87,20 +87,20 @@
 	width: 100%;
 }
 
-.overlay-3::before, .overlay-3::after {
+.overlay-3::before, .overlay-3::after, .overlay-8::before, .overlay-9::before {
 	width: 100%;
 	height: 0;
 }
 
-.overlay-3::before {
+.overlay-3::before, .overlay-8::before {
 	top: 0;
 }
 
-.overlay-3::after {
+.overlay-3::after, .overlay-9::before {
 	bottom: 0;
 }
 
-.box:hover .overlay-3::before, .box:hover .overlay-3::after {
+.box:hover .overlay-3::before, .box:hover .overlay-3::after, .box:hover .overlay-8::before, .box:hover .overlay-9::before {
 	height: 100%
 }
 
